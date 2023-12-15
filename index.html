@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalpãoBI</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <nav class="navbar fixed-top bg-dark-subtle navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-3 text-decoration-none fw-bolder icon-link" href="about.html" target="iframe-page">
+                <img src="./img/Power Bi 2021.svg" alt=""><a class="text-white fs-3 fw-bold icon-link icon-link-hover  link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                style="--bs-link-hover-color-rgb: 255, 117, 24;" href="about.html" target="iframe-page">
+                Galpão
+            </a><a class="text-white fw-lighter icon-link icon-link-hover  link-underline link-underline-opacity-0 link-underline-opacity-0-hover" href="#">BI</a>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="text-white fs-5 nav-link fw-light icon-link icon-link-hover  link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="./reports.html" target="iframe-page" style="padding-left: 14px;">Relatórios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" target="iframe-page" class="text-white text-decoration-none fs-5 fw-light nav-link">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="./login.html" target="iframe-page" class="text-white text-decoration-none fs-5 fw-light nav-link">Acesso</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item ">
+                    <a class="nav-link active rounded bg-transparent" href="./contact.html" target="iframe-page">
+                        <button class="btn btn-outline-light rounded">Contato</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body style="padding-top:5%;">
+    <script src="./js/bootstrap.min.js"></script>
+    <iframe name="iframe-page" src="./about.html" frameborder="0" id="iframe-page" onload="resizeIframe(this)" width="100%"></iframe>
+    <script type="text/javascript">
+        function resizeIframe(iframe) {
+          iframe.height = iframe.contentWindow.document.body.scrollHeight + 40 + "px";
+        }
+      </script> 
+</body>
+
+</html>

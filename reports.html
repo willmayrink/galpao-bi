@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+    <script src="./js/bootstrap.min.js"></script>
+    <div class="d-flex justify-content-center">
+        <iframe name="iframe-page" id="iframe-page"
+            src="https://lookerstudio.google.com/embed/reporting/6c7d5f4a-9001-4ddd-a66b-3f75a7a497d0/page/tymjC"
+            frameborder="0" id="iframe-page" onload="onLoadHandler()" width="100%" height="1200px"
+            afterload="resizeIframe(this)"></iframe>
+    </div>
+    <script type="text/javascript">
+        function resizeIframe(iframe) {
+            iframe.height = iframe.contentWindow.document.body.scrollHeight + 40 + "px";
+        }
+        function onLoadHandler(iframe) {
+            resizeIframe(iframe);
+        }
+        document.querySelector('#myframe').addEventListener("load", ev => {
+        resizeIframe(document.getElementById('iframe-page'));
+        document.getElementById('iframe-page').height = iframe.contentWindow.document.body.scrollHeight + 40 + "px";
+})
+    </script>
+</body>
+
+
+
+
+</html>
