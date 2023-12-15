@@ -1,3 +1,5 @@
+
+
 .gradient-custom {
     /* fallback for old browsers */
     background: #6a11cb;
@@ -13,4 +15,7 @@
 }
 .total-opacity{
     opacity: 1;
+}
+.text-indigo{
+    color:#6610f2;
 }
