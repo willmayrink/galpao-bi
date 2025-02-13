@@ -1,21 +1,49 @@
-
-
 .gradient-custom {
     /* fallback for old browsers */
     background: #6a11cb;
-    
+
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to right, rgba(255, 92, 0, 1), rgba(255, 134, 0, 1));
-    
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgba(255, 92, 0, 1), rgba(255, 134, 0, 1))
-    }
-.transparent-opacity{
+}
+
+.transparent-opacity {
     opacity: .9;
 }
-.total-opacity{
+
+.total-opacity {
     opacity: 1;
 }
-.text-indigo{
-    color:#6610f2;
+
+.text-indigo {
+    color: #6610f2;
+}
+
+.gradient-custom-orange {
+    background: linear-gradient(#fc4a1a, #f7b733);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.background-translucent {
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+input[type='email']:focus::placeholder{
+    opacity: 0;
+}
+input[type='password']:focus::placeholder{
+    opacity: 0;
+}
+input[type='password']:focus{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.1rem;
+    font-weight: bold;
 }
